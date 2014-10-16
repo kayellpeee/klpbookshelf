@@ -1,0 +1,33 @@
+Short stories:
+  poe:
+    - murders in rue morgue
+    - the fall of the house of usher
+    - tell-tale heart
+    - the masque of red death
+    - ligeia
+    - william wilson
+
+  london:
+    short stories:
+    books:
+      - the jacket (the star-rover)
+      - the sea-wolf
+
+  fitzgerald:
+    - winter dreams
+    - babylon revisited
+
+  hemingway:
+    - a clean, well-lighted place
+    - hills like white elephants
+    - homage to switzerland
+    - a day's wait
+    - banal story
+    - old man wife to leave
+
+  misc:
+    - orwell, writing
+    - outpost of progress
+    - american scholar
+    - laughing man
+    - billy budd
