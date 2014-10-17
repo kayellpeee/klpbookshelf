@@ -1,6 +1,7 @@
 var express = require('express');
 
 var app = express();
+var port = process.env.PORT || 4000;
 
 app.get('/Fitzgerald', function(req, res){
   var selection = Math.ceil(Math.random() * 2);
@@ -54,4 +55,5 @@ app.use('/Poe/4', express.static(__dirname + '/Poe/The Masque of the Red Death.p
 app.use('/Poe/5', express.static(__dirname + '/Poe/The Murders In The Rue Morgue.pdf'));
 app.use('/Poe/6', express.static(__dirname + '/Poe/William Wilson.pdf'));
 
-app.listen(4000);
+app.listen(port);
+console.log('listening on port ', port, '…');
