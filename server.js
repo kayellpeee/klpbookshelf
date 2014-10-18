@@ -90,5 +90,9 @@ app.use('/Poe/TheMasqueOfTheRedDeath', express.static(__dirname + '/Poe/The Masq
 app.use('/Poe/TheMurdersInRueMorgue', express.static(__dirname + '/Poe/The Murders In The Rue Morgue.pdf'));
 app.use('/Poe/WilliamWilson', express.static(__dirname + '/Poe/William Wilson.pdf'));
 
+app.get('/*', function(req, res){
+  res.send('<h1>Keenan\'s Bookshelf</h1><h3>Welcome! How this works:</h3><p>Any request to the following urls will serve up a random pdf of a book/story the author wrote. /Misc is grab bag</p><ul><li>/Fitzgerald</li><li>/JackLondon</li><li>/Hemingway</li><li>/Poe</li><li>/Misc</li></ul>');
+});
+
 app.listen(port);
 console.log('listening on port ', port, '…');
