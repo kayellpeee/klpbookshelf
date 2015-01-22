@@ -36,12 +36,12 @@ var bookshelf = {
     'TheMurdersInRueMorgue',
     'WilliamWilson'
   ]
-}
+};
 
 var grabBook = function(req, res, author){
   var selection = Math.floor(Math.random() * bookshelf[author].length);
   res.redirect('/' + author + '/' + bookshelf[author][selection]);
-}
+};
 
 app.get('/Fitzgerald', function(req, res){
   grabBook(req, res, 'Fitzgerald');
@@ -89,6 +89,8 @@ app.use('/Poe/TheFallOfTheHouseOfUsher', express.static(__dirname + '/Poe/The Fa
 app.use('/Poe/TheMasqueOfTheRedDeath', express.static(__dirname + '/Poe/The Masque of the Red Death.pdf'));
 app.use('/Poe/TheMurdersInRueMorgue', express.static(__dirname + '/Poe/The Murders In The Rue Morgue.pdf'));
 app.use('/Poe/WilliamWilson', express.static(__dirname + '/Poe/William Wilson.pdf'));
+
+app.use('/KLP/resume', express.static(__dirname + '/KLP/resume.pdf'));
 
 app.get('/*', function(req, res){
   res.send('<h1>Keenan\'s Bookshelf</h1><h3>Welcome! How this works:</h3><p>Any request to the following urls will serve up a random pdf of a book/story the author wrote. /Misc is grab bag</p><ul><li>/Fitzgerald</li><li>/JackLondon</li><li>/Hemingway</li><li>/Poe</li><li>/Misc</li></ul>');
