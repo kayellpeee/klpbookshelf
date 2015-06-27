@@ -26,7 +26,9 @@ var bookshelf = {
     'BillyBuddSailor_Melville',
     'TheLaughingMan_Salinger',
     'AnOutpostOfProgress_Conrad',
-    'TheAmericanScholar_Emerson'
+    'TheAmericanScholar_Emerson',
+    'ThePrisonerInTheThemeParkPt1_Sesser',
+    'ThePrisonerInTheThemeParkPt2_Sesser'
     ],
   Poe: [
     'Ligeia',
@@ -82,6 +84,8 @@ app.use('/Misc/BillyBuddSailor_Melville', express.static(__dirname + '/Miscelane
 app.use('/Misc/TheLaughingMan_Salinger', express.static(__dirname + '/Miscelaneous/J.D. Salinger - The Laughing Man.pdf'));
 app.use('/Misc/AnOutpostOfProgress_Conrad', express.static(__dirname + '/Miscelaneous/Joseph Conrad - An Outpost of Progress.pdf'));
 app.use('/Misc/TheAmericanScholar_Emerson', express.static(__dirname + '/Miscelaneous/Ralph Waldo Emerson - The American Scholar.pdf'));
+app.use('/Misc/ThePrisonerInTheThemeParkPt1_Sesser', express.static(__dirname + '/Miscelaneous/Sesser - Singapore, The Prisoner in the Theme Park pt1.pdf'));
+app.use('/Misc/ThePrisonerInTheThemeParkPt2_Sesser', express.static(__dirname + '/Miscelaneous/Sesser - Singapore, The Prisoner in the Theme Park pt2r.pdf'));
 
 app.use('/Poe/Ligeia', express.static(__dirname + '/Poe/Ligeia.pdf'));
 app.use('/Poe/TellTaleHeart', express.static(__dirname + '/Poe/Tell-Tale Heart.pdf'));
